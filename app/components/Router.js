@@ -32,6 +32,7 @@ const Router = async () => {
        
         
     }
+  
     else if(location.hash.includes('#/search')){
         let query = localStorage.getItem('apiSearch');
         if(!query){

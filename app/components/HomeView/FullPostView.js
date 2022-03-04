@@ -14,6 +14,7 @@ const FullPostView = (props) => {
     <h1>${title.rendered}</h1>
 
     <img src='${fimg_url}' alt='${title}'>
+
     
     `;
     $textContent.innerHTML = content.rendered;
@@ -21,7 +22,7 @@ const FullPostView = (props) => {
     $FullPostView.appendChild($textContent);
     return $FullPostView;
 
-
+    
 };
 
 

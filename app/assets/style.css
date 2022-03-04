@@ -98,3 +98,6 @@
     opacity: 1;
   }
 }
+.highlightedPost{
+  cursor: pointer;
+}

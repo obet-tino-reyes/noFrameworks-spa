@@ -49,10 +49,11 @@ const ContactView = () => {
         }
         })
         document.addEventListener('submit', (e) => {
-            
+            e.preventDefault();
             const $loader = document.querySelector('.contact-form-loader'),
             $response = document.querySelector('.contact-form-response');
             $loader.classList.remove('none');
+            
             fetch("https://formsubmit.co/ajax/obetreyes1419@gmail.com",{
                 method:'POST',
                 body: new FormData(e.target)
@@ -62,7 +63,7 @@ const ContactView = () => {
                 console.log(json)
                 $loader.classList.add('none');
                 $response.classList.remove('none');
-                $response.innerHTML = `<p>${json.message}</p>`
+                $response.innerHTML = `<p>tu mensaje ha sido enviado correctamente , si es necesario te enviaremos una respuesta lo mas rapido que podamos</p>`
                 $ContactView.reset();
                 
             })
