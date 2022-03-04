@@ -1,4 +1,4 @@
-# noFrameworks-spa
+# noFramework-spa
 
 ## things that make this project work
 - ajax
